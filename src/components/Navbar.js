@@ -5,7 +5,7 @@ import logo from "../assets/images/cod-logo-white.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
-  faInstagram,
+  faTwitter,
   faJediOrder,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -84,13 +84,13 @@ const Navbar = () => {
           </NavLinks>
         </NavHeader>
         <SocialLinks>
-          <a href="https://www.instagram.com/callofduty">
-            <FontAwesomeIcon icon={faInstagram} />
+          <a href="https://twitter.com/Diablo">
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="https://www.facebook.com/callofduty">
+          <a href="https://www.facebook.com/Diablo">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://www.callofduty.com">
+          <a href="https://diablo4.blizzard.com/en-us/">
             <FontAwesomeIcon icon={faJediOrder} />
           </a>
         </SocialLinks>
