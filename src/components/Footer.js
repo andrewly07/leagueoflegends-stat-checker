@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
-  faJediOrder,
+  faSquarespace,
 } from "@fortawesome/free-brands-svg-icons";
 
 const FooterMain = styled.footer`
@@ -87,14 +87,14 @@ const Footer = () => {
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
           <SocialLinks>
-            <a href="https://www.instagram.com/callofduty">
+            <a href="https://www.instagram.com/Diablo">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://www.facebook.com/callofduty">
+            <a href="https://www.facebook.com/Diablo">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://www.callofduty.com">
-              <FontAwesomeIcon icon={faJediOrder} />
+            <a href="https://us.diablo3.com/en/">
+              <FontAwesomeIcon icon={faSquarespace} />
             </a>
           </SocialLinks>
         </LinksContainer>
