@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/images/cod-logo-white.svg";
+import logo from "../assets/images/diablo-logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -65,10 +65,10 @@ const SocialLinks = styled.div`
 `;
 
 const CopyrightText = styled.p`
-  font-size: .85rem;
+  font-size: 0.85rem;
   color: #c7c7c7;
   width: 80vw;
-`
+`;
 
 const Footer = () => {
   return (
@@ -76,10 +76,11 @@ const Footer = () => {
       <FooterFlex>
         <DescriptionContainer>
           <Link to="/">
-            <img src={logo} alt="call of duty modern warfare logo" />
+            <img src={logo} alt="diablo 3 reaper of souls logo" />
           </Link>
           <p>
-            Quickly check your stats for Call of Duty: Modern Warfare. Built with React.
+            Quickly find your hero for Diablo III: Reaper of Souls. Built with
+            React.
           </p>
         </DescriptionContainer>
         <LinksContainer>
@@ -100,15 +101,21 @@ const Footer = () => {
       </FooterFlex>
       <CopyrightText>
         Fair Use Notice: This web site contains copyrighted material whose use
-        has not been authorized by Activision. This site is non-profit, and is
+        has not been authorized by Blizzard. This site is non-profit, and is
         intended for educational use, constituting a fair use of the copyrighted
         material (as provided for in section 107 of the US Copyright Law.) If
         you wish to use this copyrighted material for purposes that go beyond
-        fair use, you must first obtain permission from Activision. All Call Of
-        Duty: Modern Warfare related artwork and audio posted on this site is
-        owned by Activision. This site is in no way affiliated or endorsed by
-        Activision. For official Call Of Duty: Modern Warfare information please
-        visit <a href="https://www.callofduty.com" target="_blank" rel="noopener noreferrer">callofduty.com</a>
+        fair use, you must first obtain permission from Blizzard. All Diablo
+        IIIrelated artwork and audio posted on this site is owned by Blizzard.
+        This site is in no way affiliated or endorsed by Blizzard. For official
+        Diablo III information please visit{" "}
+        <a
+          href="https://us.diablo3.com/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          diablo3.com
+        </a>
       </CopyrightText>
     </FooterMain>
   );

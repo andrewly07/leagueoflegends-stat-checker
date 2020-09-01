@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/images/cod-logo-white.svg";
+import logo from "../assets/images/diablo-logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faTwitter,
-  faJediOrder,
+  faSquarespace,
 } from "@fortawesome/free-brands-svg-icons";
+// import { GiDiabloSkull } from "react-icons/gi";
 
 const Nav = styled.div`
   position: fixed;
@@ -73,7 +74,7 @@ const Navbar = () => {
     <Nav>
       <NavCenter>
         <NavHeader>
-          <img src={logo} alt="call of duty modern warfare logo" />
+          <img src={logo} alt="diablo 3 reaper of souls logo" />
           <NavLinks>
             <li>
               <Link to="/">Home</Link>
@@ -90,8 +91,8 @@ const Navbar = () => {
           <a href="https://www.facebook.com/Diablo">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://diablo4.blizzard.com/en-us/">
-            <FontAwesomeIcon icon={faJediOrder} />
+          <a href="https://us.diablo3.com/en/">
+            <FontAwesomeIcon icon={faSquarespace} />
           </a>
         </SocialLinks>
       </NavCenter>

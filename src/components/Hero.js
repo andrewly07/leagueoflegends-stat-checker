@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BgImage from "../assets/images/cod-hero.jpg";
+import BgImage from "../assets/images/diablo-reaper-of-souls.jpg";
 import Title from "./Title";
 
 const HeroMain = styled.section`
@@ -11,18 +11,18 @@ const HeroMain = styled.section`
   background-position: top;
   background-attachment: fixed;
   margin-top: 4rem;
-    @media (max-width: 767px) {
-        background-attachment: scroll;
-    }
+  @media (max-width: 767px) {
+    background-attachment: scroll;
+  }
 `;
 
 const Hero = () => {
   return (
     <HeroMain>
       <Title
-        title="Call of Duty: Modern Warfare"
-        subtitle="Stat Checker"
-        desc="Check wins/losses, favorite weapon, K/D ratio, and more"
+        title="Diablo III: Reaper of Souls"
+        subtitle="Hero Lore"
+        desc="Learn about a character's journey to find and stop Malthael, the fallen angel."
       />
     </HeroMain>
   );
