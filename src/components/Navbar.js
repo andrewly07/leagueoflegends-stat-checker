@@ -31,7 +31,7 @@ const NavHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1.25rem;
+  padding: 0.2rem 1.25rem;
 
   img {
     width: 200px;

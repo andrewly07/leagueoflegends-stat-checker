@@ -74,19 +74,19 @@ class InputStats extends React.Component {
   state = {
     success: null,
     userData: [],
-    platform: "",
-    username: "",
+    profile: "",
+    user: "",
   };
 
   handleChange = (e) => {
     this.setState({
-      username: e.target.value,
+      profile: e.target.value,
     });
   };
 
   handleRadioChange = (e) => {
     this.setState({
-      platform: e.target.value,
+      user: e.target.value,
     });
   };
 
@@ -96,14 +96,26 @@ class InputStats extends React.Component {
   };
 
   async getUserData() {
-    let name = this.state.username;
-    let plat = this.state.platform;
+    let profile = this.state.profile;
+    let username = this.state.user;
 
-    let url = `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${name}/${plat}`;
+    let url = `https://us.api.blizzard.com/d3/${profile}/${username}`;
     const headers = {
       "x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
       "x-rapidapi-key": "f20ce8e6b3mshe7fb7b3898a80a0p17c547jsncc06a03797e7",
     };
+
+    //   {
+    //     "access_token": "USayf4ppb62MTYgwH8sqimlNLtcZ5s0mda",
+    //     "token_type": "bearer",
+    //     "expires_in": 86399
+    // }
+
+    //     0a7e218f60a54c649ab0bf9fcd5f2204
+    // Client ID
+
+    // 8fQa61MpKCmREfR9xzz6s5TRV2gnPjD9
+    // Client Secret
 
     await axios
       .get(url, {
@@ -112,17 +124,17 @@ class InputStats extends React.Component {
       .then((response) => {
         // console.log("response", response.data);
         if (response.data.lifetime) {
-            console.log('true')
-            this.setState({
-                userData: response.data.lifetime,
-                success: true
-            })
-            return
+          console.log("true");
+          this.setState({
+            userData: response.data.lifetime,
+            success: true,
+          });
+          return;
         } else if (response.data.error) {
-            this.setState({
-                success: false
-            })
-            return
+          this.setState({
+            success: false,
+          });
+          return;
         }
       });
   }
@@ -131,12 +143,15 @@ class InputStats extends React.Component {
     return (
       <StatsMain>
         {this.state.success ? (
-          <Stats userStats={this.state.userData} username={this.state.username}/>
+          <Stats
+            userStats={this.state.userData}
+            username={this.state.username}
+          />
         ) : (
           <h1>False</h1>
         )}
         <Header
-          title="Check Your Stats"
+          title="Learn Your Hero's Legacy"
           subtitle="Let's see what you've got!"
         />
 
@@ -162,10 +177,10 @@ class InputStats extends React.Component {
           </label>
           <UserLabel>
             <TitleSpan>Username</TitleSpan>
-            <span>(NOT gamertag ID)</span>
+            <span>(NOT BattleTag ID)</span>
             <UserTextInput
               type="text"
-              placeholder="platform username"
+              placeholder="type Hero ID..."
               value={this.state.username}
               onChange={this.handleChange}
             />

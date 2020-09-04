@@ -84,8 +84,9 @@ const Footer = () => {
           </p>
         </DescriptionContainer>
         <LinksContainer>
-          <Link to="/">Home</Link>
-          <Link to="/contact">Contact</Link>
+          {/* <Link to="/">Home</Link>
+          <Link to="/contact">Contact</Link> */}
+          <p>Follow Us</p>
           <SocialLinks>
             <a href="https://www.instagram.com/Diablo">
               <FontAwesomeIcon icon={faInstagram} />

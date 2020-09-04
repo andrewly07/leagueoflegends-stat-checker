@@ -4,7 +4,7 @@ import BgImage from "../assets/images/diablo-reaper-of-souls.jpg";
 import Title from "./Title";
 
 const HeroMain = styled.section`
-  height: 60vh;
+  height: 70vh;
   background-image: url(${BgImage});
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ const Hero = () => {
       <Title
         title="Diablo III: Reaper of Souls"
         subtitle="Hero Lore"
-        desc="Learn about a character's journey to find and stop Malthael, the fallen angel."
+        desc="Learn about a nephalem's journey to find and stop Malthael, the fallen angel."
       />
     </HeroMain>
   );
