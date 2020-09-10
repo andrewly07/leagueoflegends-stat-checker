@@ -3,22 +3,27 @@ import Layout from "../components/Layout";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const ErrorPage = styled.section`
+const ErrorPage = styled.header`
   background: white;
-  min-height: calc(100vh - 62px);
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 export default function error() {
   return (
     <Layout>
       <ErrorPage title="oops dead end">
-        <h1>Oops, we made a mistake!</h1>
-        <Link to="/" className="btn">
-          Go Back Home
-        </Link>
+        <p>
+          <h1>Oops, we went to a dead end!</h1>
+        </p>
+        <p>
+          <Link to="/" className="btn-block btn">
+            Go Back Home{" "}
+          </Link>
+        </p>
       </ErrorPage>
     </Layout>
   );
