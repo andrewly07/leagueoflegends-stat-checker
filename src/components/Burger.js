@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Navbar from "../components/Navbar";
 
 export const StyledBurger = styled.button`
   position: absolute;

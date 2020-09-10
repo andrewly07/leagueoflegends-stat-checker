@@ -1,8 +1,8 @@
 .contact {
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 .center {
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
@@ -34,7 +34,7 @@ label {
   cursor: pointer;
 }
 .submit:hover {
-  background: var(--darkGrey);
-  color: var(--mainWhite);
-  border-color: var(--darkGrey);
+  background: darkgray;
+  color: white;
+  border-color: darkGrey;
 }

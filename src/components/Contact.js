@@ -5,6 +5,7 @@ const Contact = () => {
   return (
     <section className={styles.contact}>
       {/* <Title title="contact" subtitle="us" /> */}
+      <h1>CONTACT ME</h1>
       <div className={styles.center}>
         <form
           action="https://formspree.io/andrewlythedev@gmail.com"

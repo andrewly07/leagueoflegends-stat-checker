@@ -74,7 +74,9 @@ const Navbar = () => {
     <Nav>
       <NavCenter>
         <NavHeader>
-          <img src={logo} alt="diablo 3 reaper of souls logo" />
+          <Link to="/">
+            <img src={logo} alt="diablo 3 reaper of souls logo" />
+          </Link>
           <NavLinks>
             <li>
               <Link to="/">Home</Link>

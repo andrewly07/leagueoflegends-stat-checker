@@ -157,22 +157,22 @@ class InputStats extends React.Component {
 
         <FormMain onSubmit={this.handleSubmit}>
           <label onChange={this.handleRadioChange}>
-            <TitleSpan>Platform</TitleSpan>
-            <div>
+            <TitleSpan>Archives</TitleSpan>
+            {/* <div>
               <RadioButton type="radio" value="psn" name="platform" />
-              <span>Playstation 4</span>
-            </div>
+              <span>Account Profile</span>
+            </div> */}
             <div>
               <RadioButton type="radio" value="xbl" name="platform" />
-              <span>Xbox</span>
+              <span>Your Hero</span>
             </div>
             <div>
               <RadioButton type="radio" value="battle" name="platform" />
-              <span>PC</span>
+              <span>Your Hero's Loot</span>
             </div>
             <div>
               <RadioButton type="radio" value="steam" name="platform" />
-              <span>Steam</span>
+              <span>Your Follower's Loot</span>
             </div>
           </label>
           <UserLabel>
@@ -180,7 +180,7 @@ class InputStats extends React.Component {
             <span>(NOT BattleTag ID)</span>
             <UserTextInput
               type="text"
-              placeholder="type Hero ID..."
+              placeholder="enter Hero ID..."
               value={this.state.username}
               onChange={this.handleChange}
             />
