@@ -148,7 +148,7 @@ class InputStats extends React.Component {
             username={this.state.username}
           />
         ) : (
-          <h1>False</h1>
+          <h1></h1>
         )}
         <Header
           title="Learn Your Hero's Legacy"

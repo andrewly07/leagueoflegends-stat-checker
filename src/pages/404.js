@@ -12,16 +12,23 @@ const ErrorPage = styled.header`
   flex-direction: column;
 `;
 
+const BackButton = styled.button`
+  background-color: grey;
+  color: #ffffff;
+  padding: 15px;
+  margin: 10px;
+`;
+
 export default function error() {
   return (
     <Layout>
-      <ErrorPage title="oops dead end">
+      <ErrorPage>
         <p>
-          <h1>Oops, we went to a dead end!</h1>
+          <h1>Oops, We Hit A Dead End!</h1>
         </p>
         <p>
-          <Link to="/" className="btn-block btn">
-            Go Back Home{" "}
+          <Link to="/">
+            <BackButton> Go Back Home</BackButton>
           </Link>
         </p>
       </ErrorPage>
