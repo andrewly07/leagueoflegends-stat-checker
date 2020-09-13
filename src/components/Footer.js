@@ -4,9 +4,7 @@ import styled from "styled-components";
 import logo from "../assets/images/lol-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  // faFacebook,
   faInstagram,
-  faSquarespace,
   faTwitter,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
@@ -60,15 +58,15 @@ const SocialLinks = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  a:hover {
-    background: purple;
-    color: white;
-    border-color: purple;
-  }
 
   a {
     font-size: 1.5rem;
     padding: 0 1rem;
+  }
+  a:hover {
+    background: purple;
+    color: white;
+    border-color: purple;
   }
 `;
 

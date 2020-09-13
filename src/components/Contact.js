@@ -1,7 +1,7 @@
 import React from "react";
 // import Title from "../Title";
 import styles from "../css/contact.module.css";
-import BgImage from "../assets/images/kda-contact.jpg";
+import BgImage from "../assets/images/k-da-akali-evelynn-neon-lol-league-of-legends-lol_1574104989.jpg";
 import styled from "styled-components";
 
 const ContactBg = styled.section`

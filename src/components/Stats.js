@@ -73,7 +73,7 @@ const Stats = ({ userStats, championName }) => {
       <Header title={championName} subtitle="Champion Stats" />
       <StatsFlexWrap>
         <StatsThird>
-          <p>wins: {wins}</p>
+          <p>wins: {name}</p>
           <p>Losses: {losses}</p>
           <p>Overall K/D Ratio: {kdRatio}</p>
           <p>Overall Kills: {kills}</p>
