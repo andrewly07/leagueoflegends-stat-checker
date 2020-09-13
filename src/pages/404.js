@@ -13,7 +13,7 @@ const ErrorPage = styled.header`
 `;
 
 const BackButton = styled.button`
-  background-color: grey;
+  background-color: purple;
   color: #ffffff;
   padding: 15px;
   margin: 10px;
@@ -24,7 +24,7 @@ export default function error() {
     <Layout>
       <ErrorPage>
         <p>
-          <h1>Oops, We Hit A Dead End!</h1>
+          <h1>Oops, We Hit A Dead End! :(</h1>
         </p>
         <p>
           <Link to="/">

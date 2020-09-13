@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/images/diablo-logo.jpg";
+import logo from "../assets/images/lol-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -30,7 +30,8 @@ const DescriptionContainer = styled.div`
   padding: 1rem;
 
   img {
-    width: 50%;
+    width: 150px;
+    height: 75px;
   }
 `;
 
@@ -76,12 +77,9 @@ const Footer = () => {
       <FooterFlex>
         <DescriptionContainer>
           <Link to="/">
-            <img src={logo} alt="diablo 3 reaper of souls logo" />
+            <img src={logo} alt="league of legends logo" />
           </Link>
-          <p>
-            Quickly find your hero for Diablo III: Reaper of Souls. Built with
-            React.
-          </p>
+          <p>Quickly find your hero for League of Legends. Built with React.</p>
         </DescriptionContainer>
         <LinksContainer>
           {/* <Link to="/">Home</Link>
@@ -102,20 +100,21 @@ const Footer = () => {
       </FooterFlex>
       <CopyrightText>
         Fair Use Notice: This web site contains copyrighted material whose use
-        has not been authorized by Blizzard. This site is non-profit, and is
-        intended for educational use, constituting a fair use of the copyrighted
-        material (as provided for in section 107 of the US Copyright Law.) If
-        you wish to use this copyrighted material for purposes that go beyond
-        fair use, you must first obtain permission from Blizzard. All Diablo
-        IIIrelated artwork and audio posted on this site is owned by Blizzard.
-        This site is in no way affiliated or endorsed by Blizzard. For official
-        Diablo III information please visit{" "}
+        has not been authorized by Riot Games, Inc. This site is non-profit, and
+        is intended for educational use, constituting a fair use of the
+        copyrighted material (as provided for in section 107 of the US Copyright
+        Law.) If you wish to use this copyrighted material for purposes that go
+        beyond fair use, you must first obtain permission from Riot Games, Inc.
+        All League of Legends related artwork and audio posted on this site is
+        owned by Riot Games, Inc. This site is in no way affiliated or endorsed
+        by Riot Games, Inc. For official League of Legends information please
+        visit{" "}
         <a
-          href="https://us.diablo3.com/en/"
+          href="https://na.leagueoflegends.com/en-us/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          diablo3.com
+          leagueoflegends.com
         </a>
       </CopyrightText>
     </FooterMain>

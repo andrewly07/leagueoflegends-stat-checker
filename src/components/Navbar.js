@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/images/diablo-logo.jpg";
+import logo from "../assets/images/lol-logo.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Burger from "./Burger";
 
@@ -33,7 +33,7 @@ const NavHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem 1.25rem;
+  padding: 0.1rem 1.25rem;
 
   img {
     width: 200px;

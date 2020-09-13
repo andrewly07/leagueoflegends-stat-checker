@@ -96,10 +96,10 @@ class InputStats extends React.Component {
   };
 
   async getUserData() {
-    let profile = this.state.profile;
-    let username = this.state.user;
+    // let profile = this.state.profile;
+    let championName = this.state.user;
 
-    let url = `https://us.api.blizzard.com/d3/${profile}/${username}`;
+    let url = `http://ddragon.leagueoflegends.com/cdn/10.18.1/data/en_US/champion/${championName}.json`;
     const headers = {
       "x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
       "x-rapidapi-key": "f20ce8e6b3mshe7fb7b3898a80a0p17c547jsncc06a03797e7",
@@ -145,13 +145,13 @@ class InputStats extends React.Component {
         {this.state.success ? (
           <Stats
             userStats={this.state.userData}
-            username={this.state.username}
+            championName={this.state.championName}
           />
         ) : (
           <h1></h1>
         )}
         <Header
-          title="Learn Your Hero's Legacy"
+          title="Learn Your K/DA Champion's Legacy"
           subtitle="Let's see what you've got!"
         />
 
@@ -162,26 +162,31 @@ class InputStats extends React.Component {
               <RadioButton type="radio" value="psn" name="platform" />
               <span>Account Profile</span>
             </div> */}
+
             <div>
-              <RadioButton type="radio" value="xbl" name="platform" />
-              <span>Your Hero</span>
+              <RadioButton type="radio" value="Ahri" name="platform" />
+              <span>Ahri</span>
             </div>
             <div>
-              <RadioButton type="radio" value="battle" name="platform" />
-              <span>Your Hero's Loot</span>
+              <RadioButton type="radio" value="Akali" name="platform" />
+              <span>Akali</span>
             </div>
             <div>
-              <RadioButton type="radio" value="steam" name="platform" />
-              <span>Your Follower's Loot</span>
+              <RadioButton type="radio" value="Evelynn" name="platform" />
+              <span>Evelynn</span>
+            </div>
+            <div>
+              <RadioButton type="radio" value="Kai'Sa" name="platform" />
+              <span>Kai'Sa</span>
             </div>
           </label>
           <UserLabel>
-            <TitleSpan>Username</TitleSpan>
-            <span>(NOT BattleTag ID)</span>
+            <TitleSpan>Champion Name</TitleSpan>
+            {/* <span>(NOT BattleTag ID)</span> */}
             <UserTextInput
               type="text"
-              placeholder="enter Hero ID..."
-              value={this.state.username}
+              placeholder="enter their name..."
+              value={this.state.championName}
               onChange={this.handleChange}
             />
           </UserLabel>

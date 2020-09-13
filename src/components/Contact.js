@@ -1,9 +1,19 @@
 import React from "react";
 // import Title from "../Title";
 import styles from "../css/contact.module.css";
+import BgImage from "../assets/images/lisa-buijteweg-kda-small.jpg";
+import styled from "styled-components";
+
+const ContactBg = styled.section`
+  background-image: url(${BgImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgba(128, 128, 128, 0.7); */
+`;
+
 const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <ContactBg className={styles.contact}>
       {/* <Title title="contact" subtitle="us" /> */}
       <h1>CONTACT ME</h1>
       <div className={styles.center}>
@@ -53,7 +63,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </section>
+    </ContactBg>
   );
 };
 

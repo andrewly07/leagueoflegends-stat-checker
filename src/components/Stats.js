@@ -15,13 +15,13 @@ const StatsFlexWrap = styled.div`
 `;
 
 const StatsIndividualMain = styled.div`
-    background: #f3f3f3;
-    padding: 2rem 1rem;
+  background: #f3f3f3;
+  padding: 2rem 1rem;
 `;
 
 const StatsRandomMain = styled.div`
-    background: black;
-    padding: 2rem 1rem;
+  background: black;
+  padding: 2rem 1rem;
 `;
 
 const StatsThird = styled.div`
@@ -32,33 +32,9 @@ const StatsThird = styled.div`
   align-items: center;
 `;
 
-const Stats = ({ userStats, username }) => {
+const Stats = ({ userStats, championName }) => {
   console.log("users stats", userStats);
-    const {
-        avengerKills,
-        c4Kills,
-        carepackagesCaptured,
-        comebackKills,
-        deadSilenceKills,
-        deathsFromBehind,
-        destroyedKillstreaks,
-        fragKills,
-        hipfireKills,
-        killstreakAirKills,
-        launcherKills,
-        launcherDeaths,
-        lmgDeaths,
-        lmgKills,
-        longshotKills,
-        meleeDeaths,
-        molotovKills,
-        pistolKills,
-        pistolPeaths,
-        semtexKills,
-        shotgunDeaths,
-        shotgunKills,
-
-    } = userStats.accoladeData.properties;
+  const { name, title, image } = userStats.id;
 
   const {
     accuracy,
@@ -94,7 +70,7 @@ const Stats = ({ userStats, username }) => {
 
   return (
     <StatsMain>
-      <Header title={username} subtitle="Multiplayer Stats" />
+      <Header title={championName} subtitle="Champion Stats" />
       <StatsFlexWrap>
         <StatsThird>
           <p>wins: {wins}</p>
@@ -120,46 +96,46 @@ const Stats = ({ userStats, username }) => {
         </StatsThird>
       </StatsFlexWrap>
       <StatsIndividualMain>
-      <h4>Individual Game Stats</h4>
-      <StatsFlexWrap>
-        <StatsThird>
-          <p>Most Kills: {bestKills}</p>
-          <p>Highest Killstreak: {bestKillStreak}</p>
-          <p>Best K/D Ratio: {bestKD}</p>
-          <p>Most Deaths: {bestDeaths}</p>
-          <p>Most Defends: {bestDefends}</p>
-          <p>Most Defuses: {bestDefuses}</p>
-        </StatsThird>
-        <StatsThird>
-          <p>Best Score: {bestScore}</p>
-          <p>Win/Loss Ratio: {winLossRatio}</p>
-          <p>Most Plants: {bestPlants}</p>
-          <p>Most Rescues: {bestRescues}</p>
-          <p>Most Captures: {bestCaptures}</p>
-          <p>Most Confirms: {bestConfirmed}</p>
-        </StatsThird>
-      </StatsFlexWrap>
+        <h4>Individual Game Stats</h4>
+        <StatsFlexWrap>
+          <StatsThird>
+            <p>Most Kills: {bestKills}</p>
+            <p>Highest Killstreak: {bestKillStreak}</p>
+            <p>Best K/D Ratio: {bestKD}</p>
+            <p>Most Deaths: {bestDeaths}</p>
+            <p>Most Defends: {bestDefends}</p>
+            <p>Most Defuses: {bestDefuses}</p>
+          </StatsThird>
+          <StatsThird>
+            <p>Best Score: {bestScore}</p>
+            <p>Win/Loss Ratio: {winLossRatio}</p>
+            <p>Most Plants: {bestPlants}</p>
+            <p>Most Rescues: {bestRescues}</p>
+            <p>Most Captures: {bestCaptures}</p>
+            <p>Most Confirms: {bestConfirmed}</p>
+          </StatsThird>
+        </StatsFlexWrap>
       </StatsIndividualMain>
       <StatsRandomMain>
-      <h4>Individual Game Stats</h4>
-      <StatsFlexWrap>
-        <StatsThird>
-          <p>Most Kills: {bestKills}</p>
-          <p>Highest Killstreak: {bestKillStreak}</p>
-          <p>Best K/D Ratio: {bestKD}</p>
-          <p>Most Deaths: {bestDeaths}</p>
-          <p>Most Defends: {bestDefends}</p>
-          <p>Most Defuses: {bestDefuses}</p>
-        </StatsThird>
-        <StatsThird>
-          <p>Best Score: {bestScore}</p>
-          <p>Win/Loss Ratio: {winLossRatio}</p>
-          <p>Most Plants: {bestPlants}</p>
-          <p>Most Rescues: {bestRescues}</p>
-          <p>Most Captures: {bestCaptures}</p>
-          <p>Most Confirms: {bestConfirmed}</p>
-        </StatsThird>
-      </StatsFlexWrap>
+        <h4>Individual Game Stats</h4>
+        <StatsFlexWrap>
+          <StatsThird>
+            <p>Most Kills: {bestKills}</p>
+            <p>Highest Killstreak: {bestKillStreak}</p>
+            <p>Best K/D Ratio: {bestKD}</p>
+            <p>Most Deaths: {bestDeaths}</p>
+            <p>Most Defends: {bestDefends}</p>
+            <p>Most Defuses: {bestDefuses}</p>
+          </StatsThird>
+          <StatsThird>
+            <p>Best Score: {bestScore}</p>
+            <p>Win/Loss Ratio: {winLossRatio}</p>
+            <p>Most Plants: {bestPlants}</p>
+            <p>Most Rescues: {bestRescues}</p>
+            <p>Most Captures: {bestCaptures}</p>
+            <p>Most Confirms: {bestConfirmed}</p>
+          </StatsThird>
+        </StatsFlexWrap>
       </StatsRandomMain>
     </StatsMain>
   );

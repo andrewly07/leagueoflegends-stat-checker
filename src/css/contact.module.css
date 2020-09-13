@@ -1,5 +1,7 @@
 .contact {
   padding: 8rem 0;
+  color: white;
+  /* background-color: rgba(128, 128, 128, 0.7); */
 }
 .center {
   width: 60vw;
@@ -26,15 +28,15 @@ label {
   border-radius: 0.25rem;
 }
 .submit {
-  background-color: var(--primaryColor);
-  border-color: var(--primaryColor);
+  background-color: white;
+  border-color: white;
   text-transform: uppercase;
-  color: var(--mainBlack);
+  color: black;
   transition: var(--mainTransition);
   cursor: pointer;
 }
 .submit:hover {
-  background: darkgray;
+  background: purple;
   color: white;
-  border-color: darkGrey;
+  border-color: purple;
 }
