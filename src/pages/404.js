@@ -13,7 +13,7 @@ const ErrorPage = styled.header`
 `;
 
 const BackButton = styled.button`
-  background-color: purple;
+  background-color: #663399;
   color: #ffffff;
   padding: 15px;
   margin: 10px;

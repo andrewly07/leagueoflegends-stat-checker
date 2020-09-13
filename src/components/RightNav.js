@@ -33,7 +33,7 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #2b2d2f;
+    background-color: #663399;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;

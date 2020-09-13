@@ -4,9 +4,11 @@ import styled from "styled-components";
 import logo from "../assets/images/lol-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
+  // faFacebook,
   faInstagram,
   faSquarespace,
+  faTwitter,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 const FooterMain = styled.footer`
@@ -79,21 +81,23 @@ const Footer = () => {
           <Link to="/">
             <img src={logo} alt="league of legends logo" />
           </Link>
-          <p>Quickly find your hero for League of Legends. Built with React.</p>
+          <p>
+            Quickly find your champion for League of Legends. Built with React.
+          </p>
         </DescriptionContainer>
         <LinksContainer>
           {/* <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link> */}
           <p>Follow Us</p>
           <SocialLinks>
-            <a href="https://www.instagram.com/Diablo">
+            <a href="https://www.instagram.com/kda_music/">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://www.facebook.com/Diablo">
-              <FontAwesomeIcon icon={faFacebook} />
+            <a href="https://twitter.com/kda_music/">
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://us.diablo3.com/en/">
-              <FontAwesomeIcon icon={faSquarespace} />
+            <a href="https://www.facebook.com/leagueoflegends/">
+              <FontAwesomeIcon icon={faFacebook} />
             </a>
           </SocialLinks>
         </LinksContainer>
