@@ -6,8 +6,10 @@ import Stats from "./Stats";
 
 const StatsMain = styled.section`
   padding-bottom: 4rem;
-  width: 80vw;
+  width: 100vw;
   margin: 0 auto;
+  background: rgb(30, 30, 38);
+  color: rgb(195, 195, 207);
 `;
 
 const FormMain = styled.form`
@@ -63,7 +65,7 @@ const TitleSpan = styled.span`
     content: "";
     display: block;
     height: 2px;
-    background-color: #b70000;
+    background-color: #663399;
     position: relative;
     width: 10%;
     margin: 1rem auto;

@@ -14,7 +14,7 @@ const Error = styled.header`
 
 const BackButton = styled.button`
   background-color: #663399;
-  color: #ffffff;
+  color: #fff;
   padding: 15px;
   margin: 10px;
 

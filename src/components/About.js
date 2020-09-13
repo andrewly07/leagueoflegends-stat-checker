@@ -4,18 +4,17 @@ import AboutImg from "../assets/images/lisa-buijteweg-kda-small.jpg";
 import ReactPlayer from "react-player/youtube";
 
 const AboutPage = styled.header`
-  background: white;
+  background: rgb(30, 30, 38);
   min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: black;
+  color: rgb(195, 195, 207);
   /* overflow: auto; */
   padding: 100px;
 `;
 const AboutContent = styled.section`
-  background: white;
   height: 100%;
   /* display: flex;
   justify-content: center;
