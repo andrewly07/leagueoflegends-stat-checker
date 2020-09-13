@@ -1,13 +1,15 @@
 import React from "react";
 // import Title from "../Title";
 import styles from "../css/contact.module.css";
-import BgImage from "../assets/images/lisa-buijteweg-kda-small.jpg";
+import BgImage from "../assets/images/kda-contact.jpg";
 import styled from "styled-components";
 
 const ContactBg = styled.section`
   background-image: url(${BgImage});
-  background-size: cover;
+  /* background-size: 75% 50%; */
   background-repeat: no-repeat;
+  background-position: 80% 20%;
+  /* background-attachment: fixed; */
   /* background-color: rgba(128, 128, 128, 0.7); */
 `;
 

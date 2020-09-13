@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faSquarespace,
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebook,
+//   faTwitter,
+//   faSquarespace,
+// } from "@fortawesome/free-brands-svg-icons";
 
 const Ul = styled.ul`
   height: auto;
@@ -76,23 +76,23 @@ const NavLinks = styled.ul`
   }
 `;
 
-const SocialLinks = styled.div`
-  display: flex;
-  top: 0;
-  text-align: right;
-  /* line-height: 0; */
+// const SocialLinks = styled.div`
+//   display: flex;
+//   top: 0;
+//   text-align: right;
+//   line-height: 0;
 
-  a {
-    color: white;
-    margin: 0 0.5rem;
-    font-size: 1rem;
-  }
-  @media (max-width: 768px) {
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-  }
-`;
+//   a {
+//     color: white;
+//     margin: 0 0.5rem;
+//     font-size: 1rem;
+//   }
+//   @media (max-width: 768px) {
+//     justify-content: center;
+//     text-align: center;
+//     margin: 10px;
+//   }
+// `;
 
 const RightNav = ({ open }) => {
   return (
@@ -103,7 +103,7 @@ const RightNav = ({ open }) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/contact">contact</Link>

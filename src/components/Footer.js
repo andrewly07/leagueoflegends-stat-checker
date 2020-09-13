@@ -60,6 +60,11 @@ const SocialLinks = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  a:hover {
+    background: purple;
+    color: white;
+    border-color: purple;
+  }
 
   a {
     font-size: 1.5rem;
