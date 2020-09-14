@@ -17,7 +17,17 @@ const FormMain = styled.form`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  .inputButton {
+    padding: 10px;
+    background-color: #663399;
+    color: #fff;
+    border-radius: 12px;
+  }
+  .inputButton:hover {
+    cursor: pointer;
+    background-color: darkviolet;
+    color: #ffffff;
+  }
   div {
     margin: 0.5rem 0;
     text-align: left;
@@ -192,7 +202,7 @@ class InputStats extends React.Component {
               onChange={this.handleChange}
             />
           </UserLabel>
-          <input type="submit" value="Submit" />
+          <input className="inputButton" type="submit" value="Submit" />
         </FormMain>
         {/* <Stats userStats={this.state.userData}/> */}
       </StatsMain>

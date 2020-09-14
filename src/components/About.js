@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import AboutImg from "../assets/images/lisa-buijteweg-kda-small.jpg";
 import ReactPlayer from "react-player/youtube";
+import AhriImg from "../assets/images/AhriTeaser_carousel_notext.jpg";
 
 const AboutPage = styled.header`
   background: rgb(30, 30, 38);
@@ -15,27 +16,26 @@ const AboutPage = styled.header`
   padding: 100px;
 `;
 const AboutContent = styled.section`
+  margin: 50px;
   height: 100%;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: black; */
-  /* display: inline-block; */
 `;
 
-const AboutAhri = styled.section`
-  background: white;
-  height: 100%;
-  display: fl;
-`;
+// const GirlGroup = styled.section`
+//   background: white;
+//   height: 100%;
+//   display: fl;
+// `;
 
 const MusicVid = styled.section`
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex-grow: 1;
+  margin: 50px;
 `;
 const About = () => {
   return (
@@ -45,7 +45,16 @@ const About = () => {
       <img src={AboutImg} height="400px"></img>
       <AboutContent>
         <h2>The Girls</h2>
-        <p>(Click Through)</p>
+
+        <img src={AhriImg}></img>
+        <h3></h3>
+        <p>
+          As the leader, founder, and main vocalist of K/DA, Ahri graces the
+          stage with confident charm. The calm center of the group, she values
+          authentic self-expression and encourages her team to do the same. Ahri
+          takes pride in discovering new talents and shaping them towards their
+          full potential.
+        </p>
       </AboutContent>
       <h2>The Music Videos</h2>
 
