@@ -113,8 +113,8 @@ class InputStats extends React.Component {
 
     let url = `http://ddragon.leagueoflegends.com/cdn/10.18.1/data/en_US/champion/${championName}.json`;
     const headers = {
-      "x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
-      "x-rapidapi-key": "f20ce8e6b3mshe7fb7b3898a80a0p17c547jsncc06a03797e7",
+      "x-rapidapi-host": "americas.api.riotgames.com",
+      "x-rapidapi-key": "RGAPI-22a7dcba-fc27-4a42-8a6b-9a14f9c86bd8",
     };
 
     //   {
